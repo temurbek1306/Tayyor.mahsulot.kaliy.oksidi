@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaliy Oksidi Hisoblagichi</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kaliy Oksidi Hisoblagichi</h1>
+        <ul class="disroyhat">
+            <li><b>m - tegil og'irligi</b></li>
+            <li><b>m1 - tegil va quritilgan namuna og'irligi</b></li>
+            <li><b>m2 - namuna og'irligi</b></li>
+        </ul>
+        <div class="calculator">
+            <h2>Qiymatni Hisoblash</h2>
+            <label for="m1">m1:</label>
+            <input type="number" id="m1" step="any">
+            <label for="m">m:</label>
+            <input type="number" id="m" step="any">
+            <label for="m2">m2:</label>
+            <input type="number" id="m2" step="any">
+            <button onclick="calculateValue()">Hisobla</button>
+            <p id="result-value"></p>
+        </div>
+
+        <div class="calculator">
+            <h2>m ni Hisoblash</h2>
+            <label for="m1-m">m1:</label>
+            <input type="number" id="m1-m" step="any">
+            <label for="m2-m">m2:</label>
+            <input type="number" id="m2-m" step="any">
+            <label for="value-m">Qiymat:</label>
+            <input type="number" id="value-m" step="any">
+            <button onclick="calculateM()">Hisobla</button>
+            <p id="result-m"></p>
+        </div>
+
+        <div class="calculator">
+            <h2>m1 ni Hisoblash</h2>
+            <label for="m-m1">m:</label>
+            <input type="number" id="m-m1" step="any">
+            <label for="m2-m1">m2:</label>
+            <input type="number" id="m2-m1" step="any">
+            <label for="value-m1">Qiymat:</label>
+            <input type="number" id="value-m1" step="any">
+            <button onclick="calculateM1()">Hisobla</button>
+            <p id="result-m1"></p>
+        </div>
+
+        <div class="calculator">
+            <h2>m2 ni Hisoblash</h2>
+            <label for="m1-m2">m1:</label>
+            <input type="number" id="m1-m2" step="any">
+            <label for="m-m2">m:</label>
+            <input type="number" id="m-m2" step="any">
+            <label for="value-m2">Qiymat:</label>
+            <input type="number" id="value-m2" step="any">
+            <button onclick="calculateM2()">Hisobla</button>
+            <p id="result-m2"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
